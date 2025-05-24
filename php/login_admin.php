@@ -4,7 +4,7 @@ $msg1="";
 
 $servername = "localhost";
 $dbUsername =  "root";
-$dbPassword = ""; // Remplacez par votre mot de passe MySQL
+$dbPassword = ""; 
 $dbname = "education";
 $username = $_POST['name2'];
 $password = $_POST['password2'];
