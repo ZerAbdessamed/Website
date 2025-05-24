@@ -1,9 +1,9 @@
 <?php
 
 $msg1="";
-// Configuration de la base de données
+
 $servername = "localhost";
-$dbUsername = "root"; // Remplacez par votre nom d'utilisateur MySQL
+$dbUsername =  "root";
 $dbPassword = ""; // Remplacez par votre mot de passe MySQL
 $dbname = "education";
 $username = $_POST['name2'];
