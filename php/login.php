@@ -1,17 +1,17 @@
 <?php
 
 $msg="";
-// Configuration de la base de données
+
 $servername = "localhost";
-$dbUsername = "root"; // Remplacez par votre nom d'utilisateur MySQL
-$dbPassword = ""; // Remplacez par votre mot de passe MySQL
+$dbUsername = "root";
+$dbPassword = ""; 
 $dbname = "education";
 $username = $_POST['name1'];
 $password = $_POST['password'];
 session_start();
 $_SESSION['$mat']=$username;
 
-// // Créer une connexion
+
 $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
 $req=mysqli_query($conn,"SELECT * FROM student_inf WHERE matricule ='$username' AND pass='$password'");
 $num=mysqli_num_rows($req);
