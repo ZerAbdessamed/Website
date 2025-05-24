@@ -2,14 +2,14 @@
 
 session_start();
 $mat=$_SESSION['$mat'];
-// Configuration de la base de données
+
 $servername = "localhost";
-$dbUsername = "root"; // Remplacez par votre nom d'utilisateur MySQL
-$dbPassword = ""; // Remplacez par votre mot de passe MySQL
+$dbUsername = "root"; 
+$dbPassword = ""; 
 $dbname = "education";
 $n1=$n2=$n3=$n4=$n5=$n6=$n7=$n8="";
 
-// // Créer une connexion
+
 $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
 $req=mysqli_query($conn,"SELECT * FROM note_td WHERE matricule='$mat'");
 while($row=mysqli_fetch_assoc($req)){
