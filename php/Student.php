@@ -2,7 +2,7 @@
 
 session_start();
 $matr=$_SESSION['$mat'];
-// Configuration de la base de données
+
 $servername = "localhost";
 $dbUsername = "root"; 
 $dbPassword = ""; 
