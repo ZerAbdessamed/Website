@@ -2,13 +2,11 @@
 
 session_start();
 $matr=$_SESSION['$mat_admin'];
-// Configuration de la base de données
-$servername = "localhost";
-$dbUsername = "root"; // Remplacez par votre nom d'utilisateur MySQL
-$dbPassword = ""; // Remplacez par votre mot de passe MySQL
-$dbname = "education";
 
-// // Créer une connexion
+$servername = "localhost";
+$dbUsername = "root"; 
+$dbPassword = ""; 
+$dbname = "education";
 $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
 $req=mysqli_query($conn,"SELECT * FROM admin_inf WHERE matricule ='$matr'" );
 while($row=mysqli_fetch_assoc($req)){
